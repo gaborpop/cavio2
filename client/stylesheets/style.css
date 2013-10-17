@@ -1,0 +1,56 @@
+.lead {
+ 
+}
+.containerMain {
+
+ height:440px;
+  
+}
+.containerMain2 {
+
+ padding-top:20px;
+ padding-bottom:20px;
+  
+}
+h1, p {
+  text-align:center;
+}
+.logoContainer {
+  max-width: 900px;
+  text-align:center;
+  margin: 0 auto;
+ 
+}
+#ListeElement {
+  width:100px;
+  
+}
+#ListeElement1 {
+  width:150px;
+  
+}
+.th_nom {
+  width:265px;
+}
+.th_region {
+   width:165px;
+}
+.th_couleur {
+  width:110px;
+}
+.th_annee {
+   width:185px;
+}
+.th_appellation {
+  width:255px;
+}
+.th_note {
+  width:120px;
+}
+.th_action {
+  width:150px;
+}
+.bu {
+  background-color:grey;
+  text-decoration: line-through;
+}
