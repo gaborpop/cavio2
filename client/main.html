@@ -7,7 +7,9 @@
     <div class="navbar-inner">
       <a class="brand" href="/">Cavio</a>
         <div class="nav-collapse collapse">
+          
         <ul class="nav pull-right">
+          {{#if currentUser}}<li><a href="{{maCaveTemplatePath}}">Acceder à ma cave</a></li>{{/if}}
           <li>{{loginButtons}}</li>
         </ul>
       </div>
