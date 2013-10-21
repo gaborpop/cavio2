@@ -1,22 +1,56 @@
+
+.rightMain {
+  
+  width: 400px;
+  height:260px;
+  background-color:white;
+    margin:0 auto;
+  margin-top:40px;
+  border-radius: 3px; 
+-moz-border-radius: 3px; 
+-webkit-border-radius: 3px; 
+}
+
+.nouveauCavio {
+  margin-top:15px;
+ 
+}
+.form-container {
+  width:330px;
+  margin:0 auto;
+   margin-top:30px;
+  
+  
+
+ 
+}
+.btn-retrait {
+  margin-left:-5px;  
+  margin-top:3px;
+}
+
+.alert {
+ font-size:10px; 
+}
 #account-email {
+margin-top:10px;
 border: 1px solid #ddd;
 font-size: 16px;
 line-height: 22px;
 font-weight: 300;
 font-family: 'Open Sans',Helvetica,sans-serif;
-height: 30px;
-
-width:250px;  
+height: 35px;
+width:308px;  
 }
 #account-password {
+margin-top:5px;  
 border: 1px solid #ddd;
 font-size: 16px;
 line-height: 22px;
 font-weight: 300;
 font-family: 'Open Sans',Helvetica,sans-serif;
-height: 30px;
-
-width:250px;   
+height: 35px;
+width:200px;   
 }
 
 
@@ -27,10 +61,14 @@ width:250px;
 body {
  font-family: 'Open Sans',Helvetica,sans-serif; 
   color: #551c2c; 
+  background-image:url(brushed.png); 
+  background-repeat:repeat;
 }
 .mainHaut {
-
- height:200px;
+ background-image:url(fondVin2.jpg);
+  
+ height:350px;
+ 
 }
 .pull-right {
 
@@ -59,7 +97,7 @@ body {
  padding-bottom:2px;
   
 }
-h1, p, h3 {
+h1, p, h3, h2, h4, h5 {
   text-align:center;
 }
 .logoContainer {

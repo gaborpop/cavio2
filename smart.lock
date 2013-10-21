@@ -5,7 +5,8 @@
       "router": {},
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
-      "event-hooks": {}
+      "event-hooks": {},
+      "uikit": {}
     },
     "packages": {
       "router": {
@@ -27,6 +28,11 @@
         "git": "https://github.com/BenjaminRH/meteor-event-hooks.git",
         "tag": "v1.4.3",
         "commit": "ba4f3d7887748458618d29615492906f0c88d31c"
+      },
+      "uikit": {
+        "git": "https://github.com/qasz/meteor-uikit.git",
+        "tag": "v1.0.0",
+        "commit": "407ace8ab900d622b635651510f0721368317447"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
