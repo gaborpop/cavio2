@@ -1,6 +1,6 @@
 <template name="tableauVinTemplate">
 <form class="form-inline">
-        <input type="text" class="input-large" placeholder="Nom du vin" name="nom_vin">
+        <input type="text" class="input-medium" placeholder="Nom du vin" name="nom_vin">
           <select id="ListeElement1" name="region_vin"> 
            <option value="valeur1">Bordeaux</option> 
            <option value="valeur2">Bourgogne</option> 
@@ -14,8 +14,8 @@
            <option value="valeur2">Blanc</option> 
            <option value="valeur3">Rosé</option> 
         </select> 
-        <input type="text" class="input-medium" placeholder="Année" name="annee_vin">
-        <input type="text" class="input-large appellation" placeholder="Appellation" name="appellation_vin">
+        <input type="text" class="input-mini" placeholder="Année" name="annee_vin">
+        <input type="text" class="input-small appellation" placeholder="Appellation" name="appellation_vin">
         <select id="ListeElement" name="note_vin"> 
           <option value="valeur1">Note : 1</option> 
           <option value="valeur2">Note : 2</option> 
@@ -23,49 +23,33 @@
         </select> 
          
         
-        <button type="submit" class="btn" value="Submit">Créer nouveau</button>
-      </form> 
+        <button type="submit" class="btn btn-success" value="Submit">Créer un vin</button>
+  </form> <br />
+       {{#each vins}}
+         <div class="blocVin">
+            <div class="row">
+              <div class="span3">
+                <img   src="red_wine.jpg" class="img-round imgVin vin" width="100" height="48">              
+              </div>
+              <div class="span4">
+                <div class="classNomVin">{{ nomVin  }} - {{ anneeVin  }}</div>
+                <div class="classAppellation">{{ appellationVin  }} - {{ regionVin  }}</div>
+                <div class="classAjoute">ajouté le {{ submittedText  }}</div> 
+              </div>
+               <div class="span2">
+                 <p class="votreNote">votre note : </p>
+                 <div class="classNoteVin">{{ noteVin  }}</div>
+                
+              </div>
+              <div class="span3">
+                <a href="{{vinEditPath this}}" class="btn btn-warning btnVin">editer</a>
+                <a href="" class="btn btn-info btnVin modifyStatus">consommer</a>
+                
+              </div>
+            </div>
+           
+         </div> 
+        <hr>
+       {{/each}}
        
-       
-       <table class="table">
-              <thead>
-                <tr>
-                  <th class="th_nom">Nom</th>
-                  <th class="th_region">Région</th>
-                  <th class="th_couleur">Couleur</th>
-                  <th class="th_annee">Année</th>
-                  <th class="th_appellation">Appellation</th>
-                  <th class="th_note">Note</th>
-                  <th class="th_action">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                
-                {{#each vins}}
-                {{#if compareStatus  statusVin  }}
-                      <tr class="bu">
-                        <td>{{ nomVin  }}</td>
-                        <td>{{ regionVin  }}</td>
-                        <td>{{ couleurVin  }}</td>
-                        <td>{{ anneeVin  }}</td>
-                        <td>{{ appellationVin  }}</td>
-                        <td>{{ noteVin  }}</td>
-                        <td><a href="" class="modifyStatus btn">{{ statusVin  }}</a>  /  <a href="{{vinEditPath this}}">edit</a></td>
-                    </tr>
-                  {{ else }}
-                    <tr class="nonbu">
-                        <td>{{ nomVin  }}</td>
-                        <td>{{ regionVin  }}</td>
-                        <td>{{ couleurVin  }}</td>
-                        <td>{{ anneeVin  }}</td>
-                        <td>{{ appellationVin  }}</td>
-                        <td>{{ noteVin  }}</td>
-                        <td><a href="" class="modifyStatus btn">{{ statusVin  }}</a>  /  <a href="{{vinEditPath this}}">edit</a></td>
-                    </tr>
-                  {{/if}}
-                {{/each}}
-                
-              </tbody>
-            </table>
 </template>       

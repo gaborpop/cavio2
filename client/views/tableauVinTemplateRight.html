@@ -1,0 +1,13 @@
+<template name="tableauVinTemplateRight">
+<div class="containerRight well" >
+  <p>Vins consommés :</p>
+    {{#each vinsBus}}
+      <div class="classVinsBus">
+        {{ nomVin  }} - {{ anneeVin  }} - {{ regionVin  }}
+      </div> 
+      <a href="" class="modifyStatus">remettre dans la cave</a>
+  
+    {{/each}}
+</div>
+
+</template>  

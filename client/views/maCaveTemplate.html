@@ -1,12 +1,24 @@
 <template name="maCaveTemplate">
    <div class="container">
-     <div class = "containerMain2 well">
+     
+     <div class = "containerMain2">
+       <h4 class="macavetitle">Gestion de ma cave : </h4><br />
       <div class="starter-template">
-        <h1>Bienvenue dans Votre Cave</h1>
-        <p class="lead">Ajoutez et éditez vos bouteilles de vin</p><br />
+        <div class="row">
+          <div class="span8">
+            {{> tableauVinTemplate  }}
+          
+          </div>
+          
+          <div class="span4">
+            {{> tableauVinTemplateRight  }}
+          
+          </div>
+        </div>
        
-      </div>
-       {{> tableauVinTemplate}}
+       
+       </div>
+       
       
      </div>
     </div>

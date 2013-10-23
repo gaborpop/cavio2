@@ -9,6 +9,7 @@
   border-radius: 3px; 
 -moz-border-radius: 3px; 
 -webkit-border-radius: 3px; 
+  border:4px #8C003D solid;
 }
 
 .nouveauCavio {
@@ -111,31 +112,59 @@ h1, p, h3, h2, h4, h5 {
   
 }
 #ListeElement1 {
-  width:150px;
+  width:100px;
   
 }
-.th_nom {
-  width:265px;
-}
-.th_region {
-   width:165px;
-}
-.th_couleur {
-  width:110px;
-}
-.th_annee {
-   width:185px;
-}
-.th_appellation {
-  width:255px;
-}
-.th_note {
-  width:120px;
-}
-.th_action {
-  width:150px;
-}
+
 .bu {
   background-color:grey;
   text-decoration: line-through;
 }
+.starter-template {
+ margin-left:30px; 
+}
+.macavetitle {
+ text-align:left;
+}
+.blocVin {
+  background-color:white;
+  
+  width:800px;
+}
+hr {
+  margin-top:3px;
+  margin-bottom:3px;
+}
+.imgVin {
+  margin-left:35px;
+  margin-top:2px;
+}
+img.vin {
+  height:55px;
+}
+.classNomVin {
+  font-size:20px;
+}
+.classAppellation {
+  font-size:16px;
+}
+.classAjoute {
+  font-size:10px;
+}
+.classNoteVin {
+  font-size:30px;
+}
+.votreNote {
+  text-align:left;
+}
+.btnVin {
+   margin-top:18px; 
+  margin-left:10px;
+}
+.containerRight {
+  margin-top:68px;
+ margin-left:15px; 
+  
+}
+
+
