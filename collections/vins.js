@@ -26,7 +26,8 @@ Meteor.methods({
       userId: user._id, 
       author: user.username, 
       statusVin: 'nonBu',
-      submitted: new Date().getTime()
+      submitted: new Date().getTime(),
+      modifiedStatus: new Date().getTime()
     });
 
     var vinId = Vins.insert(vin);
@@ -41,7 +42,7 @@ Meteor.methods({
    
     if (vin1.statusVin === 'nonBu') {
         Vins.update(vin1._id, {
-          $set: {statusVin: 'Bu'}
+          $set: {statusVin: 'Bu', modifiedStatus: new Date().getTime() }
         });
     }
     else {

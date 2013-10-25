@@ -1,6 +1,15 @@
 Handlebars.registerHelper('compareStatus', function(n) {
-  // fairly stupid pluralizer
+  
   if (n === 'Bu') {
    return true;
   }
+});
+
+Handlebars.registerHelper('couleurDuVin', function(t) {
+
+  
+  if (t === 'Rouge') {
+   return true;
+  }
+  
 });

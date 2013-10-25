@@ -129,7 +129,7 @@ h1, p, h3, h2, h4, h5 {
 .blocVin {
   background-color:white;
   
-  width:800px;
+  width:790px;
 }
 hr {
   margin-top:3px;
@@ -144,9 +144,11 @@ img.vin {
 }
 .classNomVin {
   font-size:20px;
+  margin-top:5px;
 }
 .classAppellation {
   font-size:16px;
+  margin-top:4px;
 }
 .classAjoute {
   font-size:10px;
@@ -156,15 +158,23 @@ img.vin {
 }
 .votreNote {
   text-align:left;
+  margin-top:15px;
 }
 .btnVin {
    margin-top:18px; 
-  margin-left:10px;
+  
 }
 .containerRight {
   margin-top:68px;
- margin-left:15px; 
+ margin-left:1px; 
   
+}
+.classBus {
+  margin-top:5px;
+}
+a.remettreCave {
+ font-size:12px; 
+  margin-top:-20px;
 }
 
 

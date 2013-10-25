@@ -2,11 +2,12 @@
 <div class="containerRight well" >
   <p>Vins consommés :</p>
     {{#each vinsBus}}
+    <div class="classBus">
       <div class="classVinsBus">
         {{ nomVin  }} - {{ anneeVin  }} - {{ regionVin  }}
       </div> 
-      <a href="" class="modifyStatus">remettre dans la cave</a>
-  
+      <a href="" class="modifyStatus remettreCave">remettre dans la cave</a>
+    </div>
     {{/each}}
 </div>
 

@@ -3,7 +3,7 @@ Template.tableauVinTemplate.helpers({
     return Vins.find({statusVin : 'nonBu'}, {sort: {submitted: -1}});
   },
   vinsBus: function() {
-    return Vins.find({statusVin : 'Bu'}, {sort: {submitted: -1}});
+    return Vins.find({statusVin : 'Bu'}, {sort: {modifiedStatus: -1}});
   },
   submittedText: function() {
     var newDate = new Date(this.submitted);

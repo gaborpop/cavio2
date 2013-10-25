@@ -28,9 +28,20 @@
        {{#each vins}}
          <div class="blocVin">
             <div class="row">
-              <div class="span3">
-                <img   src="red_wine.jpg" class="img-round imgVin vin" width="100" height="48">              
+              {{#if couleurDuVin couleurVin }}
+                 <div class="span2">
+                <img   src="redbottle.png" class="img-round imgVin vin" width="23">              
               </div>
+              
+              {{else}}
+              
+              <div class="span2">
+                <img   src="whitebottle.png" class="img-round imgVin vin" width="23">              
+              </div>
+              {{/if}}
+             
+              
+              
               <div class="span4">
                 <div class="classNomVin">{{ nomVin  }} - {{ anneeVin  }}</div>
                 <div class="classAppellation">{{ appellationVin  }} - {{ regionVin  }}</div>
@@ -41,9 +52,9 @@
                  <div class="classNoteVin">{{ noteVin  }}</div>
                 
               </div>
-              <div class="span3">
-                <a href="{{vinEditPath this}}" class="btn btn-warning btnVin">editer</a>
-                <a href="" class="btn btn-info btnVin modifyStatus">consommer</a>
+              <div class="span4">
+                <a href="{{vinEditPath this}}" class="btn btn-warning btnVin"><i class="icon-pencil icon-white"></i> editer</a>
+                <a href="" class="btn btn-info btnVin modifyStatus"><i class="icon-glass icon-white"></i> consommer</a>
                 
               </div>
             </div>
