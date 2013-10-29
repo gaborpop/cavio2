@@ -6,7 +6,7 @@
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
       "event-hooks": {},
-      "uikit": {}
+      "jquery-ui-bootstrap": {}
     },
     "packages": {
       "router": {
@@ -29,10 +29,10 @@
         "tag": "v1.4.3",
         "commit": "ba4f3d7887748458618d29615492906f0c88d31c"
       },
-      "uikit": {
-        "git": "https://github.com/qasz/meteor-uikit.git",
-        "tag": "v1.0.0",
-        "commit": "407ace8ab900d622b635651510f0721368317447"
+      "jquery-ui-bootstrap": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui-bootstrap.git",
+        "tag": "v0.1.2",
+        "commit": "fa742a85639307003e105898e15b631394b63509"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
@@ -43,6 +43,11 @@
         "git": "https://github.com/tmeasday/meteor-HTML5-History-API.git",
         "tag": "v4.0.0",
         "commit": "dc4965f1424cfca625ec3fbea17eace03f8e32c5"
+      },
+      "jquery-ui": {
+        "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
+        "tag": "v1.9.2",
+        "commit": "c437d45edcf1367df8d5ffa8bad2867758030bd2"
       }
     }
   }

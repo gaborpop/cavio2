@@ -9,34 +9,9 @@ Hooks.onLoggedIn = function () {
     Meteor.Router.to('maCaveTemplate');
 }
 
-$(function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( ".appellation" ).autocomplete({
-      source: availableTags
-    });
-  });
+Hooks.onLoggedOut = function () {
+    Meteor.Router.to('/');
+}
+
 
  

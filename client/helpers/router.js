@@ -1,10 +1,16 @@
 Meteor.Router.add({
   '/': 'accueilTemplate',
+  '/contact': 'contactForm',
   '/macave':'maCaveTemplate',
   '/macave/:_id/edit': {
     to: 'vinEdit',
     and: function(id) { Session.set('currentVinId', id); }
+  },
+  '/reset-password/:_id': {
+    to: 'passwordRecovery',
+    and: function(id) { Session.set('resetPassword', id); }
   }
+
   
 });
 

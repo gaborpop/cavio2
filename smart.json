@@ -3,6 +3,7 @@
     "router": {},
     "accounts-ui-bootstrap-dropdown": {},
     "spin": {},
-    "event-hooks": {}
+    "event-hooks": {},
+    "jquery-ui-bootstrap": {}
   }
 }
