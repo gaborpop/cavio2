@@ -14,7 +14,7 @@
           <a class="brand" href="/">Cav.io</a>
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-              {{#if currentUser}}<li><a href="{{maCaveTemplatePath}}">Acceder à ma cave</a></li>{{/if}}
+              {{#if currentUser}}<li><a href="{{ pathFor 'maCaveTemplate' }}">Acceder à ma cave</a></li>{{/if}}
               <li>{{loginButtons}}</li>
             </ul>
             
@@ -24,7 +24,7 @@
     </div>
     </div>
   <div id="main" class="row-fluid">
-    {{renderPage}}
+    {{renderRouter}}
  
     </div>
   <br /><br />

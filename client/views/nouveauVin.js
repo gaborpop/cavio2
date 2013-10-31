@@ -20,7 +20,7 @@ Template.tableauVinTemplate.events({
     Meteor.call('vin', vin, function(error, id) {
       
 
-      Meteor.Router.to('maCaveTemplate', id);
+      Router.go('maCaveTemplate', id);
     });
   }
 });

@@ -1,5 +1,8 @@
 <template name="maCaveTemplate">
    <div class="container">
+     {{#if currentUser}}
+     
+     
      
      <div class = "containerMain2">
        <h4 class="macavetitle">Gestion de ma cave : </h4><br />
@@ -22,6 +25,9 @@
       
      </div>
     </div>
-  
-  
+  {{else}}
+  <div class="alert alert-error">
+    <p>You can not access this page : please log-in</p>
+  </div>
+  {{/if}}
 </template>

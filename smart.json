@@ -4,6 +4,7 @@
     "accounts-ui-bootstrap-dropdown": {},
     "spin": {},
     "event-hooks": {},
-    "jquery-ui-bootstrap": {}
+    "jquery-ui-bootstrap": {},
+    "iron-router": {}
   }
 }

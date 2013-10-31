@@ -6,11 +6,11 @@ if(Meteor.isClient){
 }
 
 Hooks.onLoggedIn = function () {
-    Meteor.Router.to('maCaveTemplate');
+    Router.go('maCaveTemplate');
 }
 
 Hooks.onLoggedOut = function () {
-    Meteor.Router.to('/');
+    Router.go('/');
 }
 
 

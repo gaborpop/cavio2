@@ -1,4 +1,4 @@
-Meteor.Router.add({
+/* Meteor.Router.add({
   '/': 'accueilTemplate',
   '/contact': 'contactForm',
   '/macave':'maCaveTemplate',
@@ -24,4 +24,49 @@ Meteor.Router.filters({
       return 'accessDenied';
   }
 })
-Meteor.Router.filter('requireLogin', {only: 'maCaveTemplate'});
+Meteor.Router.filter('requireLogin', {only: 'maCaveTemplate'});   */
+Router.map( function () {
+  
+  this.route('accueilTemplate', {
+    path: '/'
+  });
+  this.route('contactForm', {
+    path: '/contact'
+  });
+   this.route('maCaveTemplate', {
+    path: '/macave'
+  });
+  this.route('vinEdit', {
+  // get parameter via this.params
+    path: '/macave/:_id/edit',
+    data: function(id) {
+      Session.set('currentVinId', this.params._id);
+    }
+  });
+  this.route('passwordRecovery', {
+  // get parameter via this.params
+    path: '/reset-password/:_id',
+    data: function(id) {
+      Session.set('resetPassword', this.params._id);
+    }
+  });
+  
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

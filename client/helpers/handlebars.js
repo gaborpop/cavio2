@@ -13,3 +13,17 @@ Handlebars.registerHelper('couleurDuVin', function(t) {
   }
   
 });
+Router.configure({
+  autoRender: false,
+  loadingTemplate: 'loading',
+   before: function () {
+    var user = Meteor.user();
+    if (user) {
+      this.render('maCaveTemplate');
+      this.stop(); // stop the rest of the controller from running
+    }
+     else
+      return 'accessDenied';
+  }
+});
+

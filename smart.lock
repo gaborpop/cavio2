@@ -6,7 +6,8 @@
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
       "event-hooks": {},
-      "jquery-ui-bootstrap": {}
+      "jquery-ui-bootstrap": {},
+      "iron-router": {}
     },
     "packages": {
       "router": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/TimHeckel/meteor-jquery-ui-bootstrap.git",
         "tag": "v0.1.2",
         "commit": "fa742a85639307003e105898e15b631394b63509"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.0",
+        "commit": "c63e92d24c8210e2304ff5fed1b5c463394aeaf6"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",

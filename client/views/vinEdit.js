@@ -24,7 +24,7 @@ Template.vinEdit.events({
         // display the error to the user
         alert(error.reason);
       } else {
-        Meteor.Router.to('maCaveTemplate');
+        Router.go('maCaveTemplate');
       }
     });
   },
@@ -35,7 +35,7 @@ Template.vinEdit.events({
     if (confirm("Delete this post?")) {
       var currentVinId = Session.get('currentVinId');
       Vins.remove(currentVinId);
-      Meteor.Router.to('maCaveTemplate');
+      Router.go('maCaveTemplate');
     }
   }
 });
