@@ -23,7 +23,7 @@
         </select> 
          
         
-        <button type="submit" class="btn btn-success" value="Submit">Créer un vin</button>
+        <button type="submit" class="btn btn-green" value="Submit">Créer un vin</button>
   </form> <br />
        {{#each vins}}
          <div class="blocVin">
@@ -54,7 +54,7 @@
               </div>
               <div class="span4">
                 <a href="{{ pathFor 'vinEdit' }}" class="btn btn-warning btnVin"><i class="icon-pencil icon-white"></i> editer</a>
-                <a href="" class="btn btn-info btnVin modifyStatus"><i class="icon-glass icon-white"></i> consommer</a>
+                <a href="" class="btn btn-red btnVin modifyStatus"><i class="icon-glass icon-white"></i> consommer</a>
                 
               </div>
             </div>

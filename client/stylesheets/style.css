@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'god_bless_americaitalic';
+    src: url('god_bless_america-webfont.eot');
+    src: url('god_bless_america-webfont.eot?#iefix') format('embedded-opentype'),
+         url('god_bless_america-webfont.woff') format('woff'),
+         url('god_bless_america-webfont.ttf') format('truetype'),
+         url('god_bless_america-webfont.svg#god_bless_americaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 .rightMain {
   
   width: 400px;
@@ -10,6 +20,7 @@
 -moz-border-radius: 3px; 
 -webkit-border-radius: 3px; 
   border:4px #8C003D solid;
+  font-family: 'god_bless_americaitalic';
 }
 
 .nouveauCavio {
@@ -26,8 +37,9 @@
  
 }
 .btn-retrait {
-  margin-left:-5px;  
+  margin-left:-3px;  
   margin-top:3px;
+  height:44px;
 }
 
 .alert {
