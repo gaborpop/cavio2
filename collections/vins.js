@@ -22,7 +22,7 @@ Meteor.methods({
 
 
     // pick out the whitelisted keys
-    var vin = _.extend(_.pick(postAttributes, 'nomVin', 'regionVin', 'couleurVin','appellationVin','noteVin','anneeVin'), {
+    var vin = _.extend(_.pick(postAttributes, 'nomVin', 'regionVin', 'couleurVin','appellationVin','noteVin','anneeVin','commentaireVin'), {
       userId: user._id, 
       author: user.username, 
       statusVin: 'nonBu',

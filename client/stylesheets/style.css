@@ -183,7 +183,11 @@ img.vin {
   margin-top:1px;
 }
 .btnVin {
-   margin-top:18px; 
+   margin-top:3px; 
+  
+}
+.commentVin {
+   margin-top:3px; 
   
 }
 .containerRight {
@@ -241,4 +245,22 @@ width:400px;
 .img-effect:after {
  
 }
+.input-block-level {
+   margin-top : 4px;
+  width:650px;
+}
+.btn-big {
+   height:64px;
+  width:120px;
+  
+}
+.marginleft {
+  margin-left:10px;
+  
+}
+.long {
+  width:920px;
+  
+}
+
 

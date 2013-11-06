@@ -12,7 +12,8 @@ Template.tableauVinTemplate.events({
       appellationVin: $(e.target).find('[name=appellation_vin]').val(),
       statusVin: 'nonBu',
       noteVin: $(e.target).find('[name=note_vin] :selected').text().split(' : ')[1],
-      anneeVin: $(e.target).find('[name=annee_vin]').val()
+      anneeVin: $(e.target).find('[name=annee_vin]').val(),
+      commentaireVin: $(e.target).find('[name=commentaireVin]').val()
     }
     
           
