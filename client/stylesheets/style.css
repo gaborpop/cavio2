@@ -262,5 +262,13 @@ width:400px;
   width:920px;
   
 }
+.contactContainer {
+  width:700px;
+  margin:0 auto;
+  text-align:center;
+}
+#message120 {
+  width:430px;
+}
 
 

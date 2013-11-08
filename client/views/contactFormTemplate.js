@@ -8,8 +8,9 @@ Template.contactForm.events ({
    
   
     Meteor.call('sendMessage', mailM, fromM, messageM );
-   Router.go ('maCaveTemplate');
-    alert('Votre mail a été envoyé');    
+    Session.set('messageSent', true);
+    Router.go ('maCaveTemplate');
+      
   }
   
 
