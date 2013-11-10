@@ -145,7 +145,7 @@ h1, p, h3, h2, h4, h5 {
   
   width:790px;
   
-  border-bottom: dashed 1px grey;
+  
   
 }
 .pageVins {
@@ -157,7 +157,7 @@ border-radius: 3px;
 }
 
 .imgVin {
-  margin-left:45px;
+  margin-left:15px;
   margin-top:2px;
 }
 img.vin {
@@ -191,7 +191,7 @@ img.vin {
   
 }
 .containerRight {
-  margin-top:68px;
+  margin-top:1px;
  margin-left:1px; 
   
 }
@@ -251,7 +251,7 @@ width:400px;
 }
 .btn-big {
    height:64px;
-  width:120px;
+  width:112px;
   
 }
 .marginleft {
@@ -269,6 +269,92 @@ width:400px;
 }
 #message120 {
   width:430px;
+}
+
+.Grow {
+  width:790px;
+  height:65px;
+  background-color: #f3f3f0;
+  clear:both;
+  
+
+}
+.G0red {
+  width:10px;
+  background-color: #653342;
+  height:65px;
+  float:left;
+    -webkit-border-top-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-bottomleft: 4px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+.G0white {
+  width:10px;
+  background-color: #716E39;
+  height:65px;
+  float:left;
+    -webkit-border-top-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-bottomleft: 4px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+.G1 {
+  width:70px;
+  
+  
+  float:left;
+}
+.G2 {
+  width:340px;
+  
+  
+  float:left;
+}
+.G3 {
+  width:100px;
+  
+  
+  float:left;
+}
+.G4 {
+  width:260px;
+  
+ 
+  float:left;
+}
+.G5red {
+  width:10px;
+  background-color: #653342;
+  height:65px;
+  float:left;
+  -webkit-border-top-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.G5white {
+  width:10px;
+  background-color: #716E39;
+  height:65px;
+  float:left;
+  -webkit-border-top-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.formVin {
+  margin-left: 30px;
+  width:690px;
+  
 }
 
 

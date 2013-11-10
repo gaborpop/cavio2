@@ -12,6 +12,16 @@ Template.tableauVinTemplate.helpers({
     var year = newDate.getFullYear()
     
     return (day + "." + month + "." + year); 
+  },
+  isNoteOne: function() {
+    if (this.noteVin === '1')
+      return (true); 
+  },
+  isNoteTwo: function() {
+    if (this.noteVin === '2')
+      return (true); 
+    
+    
   }
   
 });
