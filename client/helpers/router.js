@@ -25,6 +25,11 @@ Meteor.Router.filters({
   }
 })
 Meteor.Router.filter('requireLogin', {only: 'maCaveTemplate'});   */
+Router.configure({
+	layoutTemplate: 'layout',
+  loadingTemplate: 'loading',
+  waitOn: function() { return Meteor.subscribe('vins'); }
+});
 Router.map( function () {
   
   this.route('accueilTemplate', {
