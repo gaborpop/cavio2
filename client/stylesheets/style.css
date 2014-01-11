@@ -143,13 +143,13 @@ h1, p, h3, h2, h4, h5 {
 }
 .blocVin {
   
-  width:790px;
+
   
   
   
 }
 .pageVins {
-  width:790px;
+ 
   background-color:white;
   -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
@@ -272,7 +272,7 @@ width:400px;
 }
 
 .Grow {
-  width:790px;
+  
   height:65px;
   background-color: #f3f3f0;
   clear:both;
@@ -280,7 +280,7 @@ width:400px;
 
 }
 .G0red {
-  width:10px;
+  width:1%;
   background-color: #653342;
   height:65px;
   float:left;
@@ -292,7 +292,7 @@ border-top-left-radius: 4px;
 border-bottom-left-radius: 4px;
 }
 .G0white {
-  width:10px;
+  width:1%;
   background-color: #716E39;
   height:65px;
   float:left;
@@ -304,31 +304,31 @@ border-top-left-radius: 4px;
 border-bottom-left-radius: 4px;
 }
 .G1 {
-  width:70px;
+  width:5%;
   
   
   float:left;
 }
 .G2 {
-  width:340px;
+  width:20%;
   
   
   float:left;
 }
 .G3 {
-  width:100px;
+  width:20%;
   
   
   float:left;
 }
 .G4 {
-  width:260px;
+  width:53%;
   
  
   float:left;
 }
 .G5red {
-  width:10px;
+  width:1%;
   background-color: #653342;
   height:65px;
   float:left;
@@ -340,7 +340,7 @@ border-top-right-radius: 4px;
 border-bottom-right-radius: 4px;
 }
 .G5white {
-  width:10px;
+  width:1%;
   background-color: #716E39;
   height:65px;
   float:left;
@@ -353,7 +353,8 @@ border-bottom-right-radius: 4px;
 }
 .formVin {
   margin-left: 30px;
-  width:690px;
+  
+	
   
 }
 
