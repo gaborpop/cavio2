@@ -357,5 +357,19 @@ border-bottom-right-radius: 4px;
 	
   
 }
-
+.spacustom {
+	border : solid black 1px;
+	background-color:yellow;
+	
+	width:20%;
+	height:50px;
+  float:left;
+	
+}
+.rowvins {
+ width:100%; 
+}
+.thumbnail2 {
+  font-size:10px;
+}
 

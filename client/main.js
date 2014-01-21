@@ -6,7 +6,7 @@ if(Meteor.isClient){
 }
 
 Hooks.onLoggedIn = function () {
-    Router.go('maCaveTemplate');
+    Router.go('maCaveTemplateListe');
 }
 
 Hooks.onLoggedOut = function () {

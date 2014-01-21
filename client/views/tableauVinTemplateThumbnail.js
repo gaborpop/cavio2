@@ -1,47 +1,41 @@
-Template.vinEdit.helpers({
-  vin: function() {
-    return Vins.findOne(Session.get('currentVinId'));
-  }
-});
-
-Template.vinEdit.events({
-  'submit form': function(e) {
-    e.preventDefault();
-
-    var currentVinId = Session.get('currentVinId');
-
-    var vinProperties = {
-      nomVin: $(e.target).find('[name=nom_vin]').val(),
-      regionVin: $(e.target).find('[name=region_vin] :selected').text(),
-      couleurVin: $(e.target).find('[name=couleur_vin] :selected').text(),
-      appellationVin: $(e.target).find('[name=appellation_vin]').val(),
-      noteVin: $(e.target).find('[name=note_vin] :selected').text().split(' : ')[1],
-      anneeVin: $(e.target).find('[name=annee_vin]').val(),
-      commentaireVin: $(e.target).find('[name=commentaireVin]').val()
-    }
-
-    Vins.update(currentVinId, {$set: vinProperties}, function(error) {
-      if (error) {
-        // display the error to the user
-        alert(error.reason);
-      } else {
-        Router.go('maCaveTemplateListe');
-      }
-    });
+Template.tableauVinTemplateThumbnail.helpers({
+  vins: function() {
+    return Vins.find({statusVin : 'nonBu'}, {sort: {submitted: -1}});
   },
-
-  'click .delete': function(e) {
-    e.preventDefault();
-
-    if (confirm("Delete this post?")) {
-      var currentVinId = Session.get('currentVinId');
-      Vins.remove(currentVinId);
-      Router.go('maCaveTemplateListe');
-    }
+  vinsBus: function() {
+    return Vins.find({statusVin : 'Bu'}, {sort: {modifiedStatus: -1}});
+  },
+  submittedText: function() {
+    var newDate = new Date(this.submitted);
+    var month = newDate.getMonth();
+    var day = newDate.getDate();
+    var year = newDate.getFullYear()
+    
+    return (day + "." + month + "." + year); 
+  },
+  isNoteOne: function() {
+    if (this.noteVin === '1')
+      return (true); 
+  },
+  isNoteTwo: function() {
+    if (this.noteVin === '2')
+      return (true); 
+    
+    
   }
+  
 });
 
-Template.vinEdit.rendered = function () {
+Template.tableauVinTemplateThumbnail.events ({
+  'click .modifyStatus': function(e) {
+    e.preventDefault();
+   
+    Meteor.call('modifyS', this._id);
+  }
+  
+  
+});  
+Template.tableauVinTemplateThumbnail.rendered = function () {
   var availableTags = [
       "Ajaccio",
 "Aloxe-corton",
@@ -342,3 +336,41 @@ Template.vinEdit.rendered = function () {
       source: availableTags
     });
 }
+		
+		Template.tableauVinTemplateThumbnail.events({
+  'submit form': function(e) {
+    e.preventDefault();
+    
+    
+    
+    
+    var vin = {
+      nomVin: $(e.target).find('[name=nom_vin]').val(),
+      regionVin: $(e.target).find('[name=region_vin] :selected').text(),
+      couleurVin: $(e.target).find('[name=couleur_vin] :selected').text(),
+      appellationVin: $(e.target).find('[name=appellation_vin]').val(),
+      statusVin: 'nonBu',
+      noteVin: $(e.target).find('[name=note_vin] :selected').text().split(' : ')[1],
+      anneeVin: $(e.target).find('[name=annee_vin]').val(),
+      commentaireVin: $(e.target).find('[name=commentaireVin]').val()
+    }
+    $(e.target).find('[name=nom_vin]').val(""),
+    $(e.target).find('[name=region_vin] :selected').text("Bordeaux"),
+    $(e.target).find('[name=couleur_vin] :selected').text("Rouge"),
+    $(e.target).find('[name=appellation_vin]').val(""),
+      
+    $(e.target).find('[name=note_vin] :selected').text("Note : 1"),
+    $(e.target).find('[name=annee_vin]').val(""),
+    $(e.target).find('[name=commentaireVin]').val("")
+          
+      
+    Meteor.call('vin', vin, function(error, id) {
+      
+
+      Router.go('maCaveTemplateThumbnail', id);
+    });
+
+
+  }
+});
+

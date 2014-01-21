@@ -33,6 +33,12 @@
   
   
   <br />
+  <div class="row">
+    <div class="span2">
+			<p><a href="{{ pathFor 'maCaveTemplateListe' }}">Par Liste</a></p>
+			<p><a href="{{ pathFor 'maCaveTemplateThumbnail' }}">Par Miniature</a></p>
+    </div>
+    <div class="span10">
     <div class="pageVins">
        {{#each vins}}
          <div class="blocVin">
@@ -95,5 +101,7 @@
             </div> 
         </div>
        {{/each}}<hr>
+      </div>
   </div> 
+  </div>
 </template>       

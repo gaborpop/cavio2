@@ -28,7 +28,7 @@ Template.tableauVinTemplate.events({
     Meteor.call('vin', vin, function(error, id) {
       
 
-      Router.go('maCaveTemplate', id);
+      Router.go('maCaveTemplateListe', id);
     });
 
 
