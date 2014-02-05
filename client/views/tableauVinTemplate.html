@@ -41,65 +41,55 @@
     <div class="span10">
     <div class="pageVins">
        {{#each vins}}
-         <div class="blocVin">
-            <div class="Grow">
-              {{#if couleurDuVin couleurVin }}
-                 <div class="G0red"></div>
-                 <div class="G1">
-                <img   src="redbottle.png" class="img-round imgVin vin" width="23">              
-              </div>
-              
-              {{else}}
-              <div class="G0white"></div>
-              <div class="G1">
-
-                <img   src="whitebottle.png" class="img-round imgVin vin" width="23">              
-              </div>
-              {{/if}}
-             
-              
-              
-              <div class="G2">
-                <div class="classNomVin">{{ nomVin  }} - {{ anneeVin  }}</div>
-                <div class="classAppellation">{{ appellationVin  }} - {{ regionVin  }}</div>
-                <div class="classAjoute">ajouté le {{ submittedText  }}</div> 
-              </div>
-               <div class="G3">
-                 <p class="votreNote">votre note : </p>
-                    {{#if isNoteOne }}
-                     <div class="classNoteVin">
-                        <img src='red_star.gif' />
-                     </div>
-                     
-                     {{else}}
-                        {{#if isNoteTwo }}
-                       <div class="classNoteVin">
-                          <img src='red_star.gif' /><img src='red_star.gif' />
-                       </div>
-                        {{else}}
-                       <div class="classNoteVin">
-                          <img src='red_star.gif' /><img src='red_star.gif' /><img src='red_star.gif' />
-                       </div>
-                      {{/if}}
-                    {{/if}}
-              </div>
-              <div class="G4">
-                <a href="{{ pathFor 'vinEdit' }}" class="btn btn-edit btnVin"><i class="icon-pencil icon-white"></i> editer</a>
-                <a href="" class="btn btn-red btnVin modifyStatus"><i class="icon-glass icon-white"></i> consommer</a>
-                <div class="commentVin"><em>"{{ commentaireVin  }}"</em></div>
-              </div>
+          <div class="Grow">   
+            <div class="G0red">
             
-            {{#if couleurDuVin couleurVin }}
-                 <div class="G5red"></div>
-                             
+            </div>
+            <div class="G1">
+
+                <img   src="redbottle.png" class="img-round imgVin vin" height="80">              
+            </div>
+            
+             <div class="G2">
+               <div class="classNomVin">{{ nomVin  }} - {{ anneeVin  }}</div>
+                <div class="classAppellation">{{ appellationVin  }} - {{ regionVin  }}</div>
+               <div class="classAppellation">Cépages : {{ cepage  }}</div>
+               
+                <div class="classAjoute">ajouté le {{ submittedText  }}</div> 
+             </div>
+            <div class="G25">
+              <div class="classAppellation">Note millésime : 5</div>
+               <div class="classAppellation">Votre note : 3</div>
+              <div class="commentVin">Commentaires: <em>"Super vin blablablablablab"</em></div>
+            </div>
+            
+            <div class="G3">
+              <div class="garde">Garde : </div>
+              <div class="garde1">{{ cavemin  }}</div>
+              <div class="garde">à</div>
+              <div class="garde1">{{ cavemax  }}</div>
+              <div class="garde">ans</div>
               
-              
-              {{else}}
-              <div class="G5white"></div>
-           
-              {{/if}}
+            </div>
+             <div class="G4">
+               <div class="garde">Temp : </div>
+              <div class="garde1">{{ tempmin }}</div>
+              <div class="garde">à</div>
+               <div class="garde1">{{ tempmax }}</div>
+              <div class="garde">°C</div>
+            </div>  
+            
+              <div class="G6">
+               <a href="{{ pathFor 'vinEdit' }}" class="btn btn-edit btnVin"><i class="icon-pencil icon-white"></i> Editer</a>
+                <a href="" class="btn btn-red btnVin modifyStatus"><i class="icon-glass icon-white"></i> Boire   </a>
+
             </div> 
-        </div>
+            
+           <div class="G5red">
+            
+           </div>
+      
+          </div>
        {{/each}}<hr>
       </div>
   </div> 

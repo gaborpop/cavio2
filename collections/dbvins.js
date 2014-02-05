@@ -1,0 +1,1 @@
+Dbvins = new Meteor.Collection('dbvins');

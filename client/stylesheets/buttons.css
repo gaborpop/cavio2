@@ -17,6 +17,7 @@
   color: #fff !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.23);
   -webkit-font-smoothing: antialiased;
+  height:30px;
 }
 .btn-green {
   background-color: hsl(127, 37%, 25%) !important;
@@ -66,7 +67,7 @@
   color: #333 !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
   -webkit-font-smoothing: antialiased;
-  width:90px;
+  height:30px;
 }
 
 .navbar-inner {

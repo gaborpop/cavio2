@@ -1,4 +1,5 @@
 Vins = new Meteor.Collection('vins');
+
 Vins.allow({
   insert: function(userId, doc) {
     // only allow posting if you are logged in
@@ -17,19 +18,24 @@ Meteor.methods({
     // ensure the user is logged in
     if (!user)
       throw new Meteor.Error(401, "You need to login to post new stories");
-
+    
    
+    
+    //var vinSelected = Dbvins.findOne({appellation : "Chablis"});	    
 
-
+  
+    
+    
     // pick out the whitelisted keys
-    var vin = _.extend(_.pick(postAttributes, 'nomVin', 'regionVin', 'couleurVin','appellationVin','noteVin','anneeVin','commentaireVin'), {
+    var vin = _.extend(_.pick(postAttributes, 'nomVin', 'regionVin', 'couleurVin','appellationVin','noteVin','anneeVin','commentaireVin', 'cavemin', 'cavemax','tempmin','tempmax','cepage'), {
       userId: user._id, 
       author: user.username, 
       statusVin: 'nonBu',
       submitted: new Date().getTime(),
       modifiedStatus: new Date().getTime()
+      //temperature: templatevins[Session.get("compteur")]["Région"]
     });
-
+   
     var vinId = Vins.insert(vin);
     return vinId;
     
@@ -53,3 +59,4 @@ Meteor.methods({
   }
  
 });
+
