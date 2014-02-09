@@ -1,0 +1,36 @@
+<template name="nouveauVin">
+  <form class="form-inline formVin">
+  <div class="row">
+      <div class="span9">
+        <input type="text" class="input-medium" placeholder="Nom du vin" name="nom_vin">
+          <select id="ListeElement1" name="region_vin"> 
+           <option value="valeur1">Bordeaux</option> 
+           <option value="valeur2">Bourgogne</option> 
+           <option value="valeur3">Alsace</option> 
+            <option value="valeur3">Côte du Rhone</option> 
+            <option value="valeur3">Vallée de la Loire</option> 
+            <option value="valeur3">Sud</option> 
+        </select> 
+        <select id="ListeElement" name="couleur_vin"> 
+           <option value="valeur1">Rouge</option> 
+           <option value="valeur2">Blanc</option> 
+           <option value="valeur3">Rosé</option> 
+        </select> 
+        <input type="text" class="input-mini" placeholder="Année" name="annee_vin">
+  <input type="text" class="input-small appellation" placeholder="Appellation" name="appellation_vin" id="tags" />
+        <select id="ListeElement" name="note_vin"> 
+          <option value="valeur1">Note : 1</option> 
+          <option value="valeur2">Note : 2</option> 
+          <option value="valeur3">Note : 3</option> 
+        </select> 
+     <input class="input-block-level" name="commentaireVin" type="text" placeholder="votre commentaire....">   
+    </div> 
+        <div class="span3">
+        <button type="submit" class="btn btn-green btn-big" value="Submit">Créer un vin</button>
+    </div>
+  </div>
+  </form> 
+  
+  
+  
+</template>  

@@ -1,6 +1,16 @@
 <template name="tableauVinTemplateRight">
-<div class="containerRight" >
-  <p>Vins consommés :</p>
+  <h4 class="macavetitle">Gestion de ma cave : Vins consommés</h4>
+ <br />
+  <div class="row">
+    <div class="span2">
+			<p><a href="{{ pathFor 'maCaveTemplateListe' }}">Par Liste</a></p>
+			<p><a href="{{ pathFor 'maCaveTemplateThumbnail' }}">Par Miniature</a></p>
+      <p><a href="{{ pathFor 'tableauVinTemplateRight' }}">Archives</a></p>
+    </div>
+    <div class="span10">
+      <div class="containerRight" >
+  
+        
     {{#each vinsBus}}
     <div class="classBus">
       <div class="classVinsBus">
@@ -10,5 +20,12 @@
     </div>
     {{/each}}
 </div>
+
+      
+      
+      
+  </div> 
+  </div> 
+  
 
 </template>  

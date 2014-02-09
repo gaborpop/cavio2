@@ -13,18 +13,19 @@
         </div>
        
        
-       <h4 class="macavetitle">Gestion de ma cave : </h4><br />
+       <h4 class="macavetitle">Gestion de ma cave : </h4>
+       <div class="row">
+        
+        <div class="span1 offset2"><a href="{{ pathFor 'nouveauVin' }}" class="btn btn-green btnVin btn-ajouter"><i class="icon-plus-sign icon-white"></i> Ajouter un vin</a></div>
+      </div>
       <div class="starter-template">
         <div class="row">
-          <div class="span10">
+          <div class="span12">
             {{> tableauVinTemplateThumbnail  }}
           
           </div>
           
-          <div class="span2">
-            {{> tableauVinTemplateRight  }}
           
-          </div>
         </div>
        
        
