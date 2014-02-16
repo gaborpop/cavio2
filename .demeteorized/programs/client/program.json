@@ -1,0 +1,353 @@
+{
+  "format": "browser-program-pre1",
+  "page": "app.html",
+  "manifest": [
+    {
+      "path": "643716a5f6f3778b182bf8234dc6cdd25230ae9c.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/643716a5f6f3778b182bf8234dc6cdd25230ae9c.js",
+      "size": 717746,
+      "hash": "643716a5f6f3778b182bf8234dc6cdd25230ae9c"
+    },
+    {
+      "path": "907d7c3141f974b29b10095cc4299a9d12b72371.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/907d7c3141f974b29b10095cc4299a9d12b72371.css",
+      "size": 179013,
+      "hash": "907d7c3141f974b29b10095cc4299a9d12b72371"
+    },
+    {
+      "path": "packages/bootstrap/img/glyphicons-halflings.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/bootstrap/img/glyphicons-halflings.png",
+      "size": 12799,
+      "hash": "84f613631b07d4fe22acbab50e551c0fe04bd78b"
+    },
+    {
+      "path": "packages/bootstrap/img/glyphicons-halflings-white.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/bootstrap/img/glyphicons-halflings-white.png",
+      "size": 8777,
+      "hash": "a25c4705320fd63c33790e666872910e702b9bf6"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_flat_0_aaaaaa_40x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_flat_0_aaaaaa_40x100.png",
+      "size": 180,
+      "hash": "da1c9bf45bd3644c2ddffcd4f631108d80e6a6f2"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_glass_55_fbf9ee_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_glass_55_fbf9ee_1x400.png",
+      "size": 120,
+      "hash": "4966153f5260cc8b5b9ea3afd5bd6b0dee5bc7b1"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_glass_65_ffffff_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_glass_65_ffffff_1x400.png",
+      "size": 105,
+      "hash": "7e5c99e9f0113ba6b63c2bb408b8347191316cda"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_glass_75_dadada_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_glass_75_dadada_1x400.png",
+      "size": 111,
+      "hash": "11e9ed5a7db83cf86034068e4f6de4c2f273f0c1"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_glass_75_e6e6e6_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_glass_75_e6e6e6_1x400.png",
+      "size": 110,
+      "hash": "c81ea6fba4db897df599670c6bf3b3b5764d4e54"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_glass_75_ffffff_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_glass_75_ffffff_1x400.png",
+      "size": 107,
+      "hash": "8a1a5ca07c2da53f4fdc59360d62133c5dff3ce9"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "size": 101,
+      "hash": "53b50999c4c9838a2a2a190b54203ab9c6acbb21"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-bg_inset-soft_95_fef1ec_1x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-bg_inset-soft_95_fef1ec_1x100.png",
+      "size": 123,
+      "hash": "68a0605f609aef52d5dcdb5b3730a22175dc133b"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-icons_2e83ff_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-icons_2e83ff_256x240.png",
+      "size": 4369,
+      "hash": "5c0800291a8dc41ae915d9fe6d42f96c67035a23"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-icons_222222_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-icons_222222_256x240.png",
+      "size": 4369,
+      "hash": "d6dee0eaf76929c4e06b2f2bc3058bdad1d0a1fc"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-icons_454545_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-icons_454545_256x240.png",
+      "size": 4369,
+      "hash": "1ab19df782d0b8491fc21c1edf7b20941624dd34"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-icons_888888_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-icons_888888_256x240.png",
+      "size": 4369,
+      "hash": "488af2c51acd097e9136d4dd1f0850168e8de760"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-icons_cd0a0a_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-icons_cd0a0a_256x240.png",
+      "size": 4369,
+      "hash": "cc0d1cda69297dd503da85738976ff8ae5e2c0f5"
+    },
+    {
+      "path": "packages/jquery-ui-bootstrap/css/images/ui-icons_f6cf3b_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/jquery-ui-bootstrap/css/images/ui-icons_f6cf3b_256x240.png",
+      "size": 8884,
+      "hash": "cb17ae743190e68b05bc4803e726dfe065f0a664"
+    },
+    {
+      "path": "app/brushed.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/brushed.png",
+      "size": 4106,
+      "hash": "8219b4bf5ca9a772e3058816b1bc30880dd504f5"
+    },
+    {
+      "path": "app/cabin-regular-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/cabin-regular-webfont.eot",
+      "size": 25158,
+      "hash": "0cf631decc3849fc44607e720d8a65dbbd00e84b"
+    },
+    {
+      "path": "app/cabin-regular-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/cabin-regular-webfont.svg",
+      "size": 149593,
+      "hash": "2d518796aa7c08d64f44ebc4b2ccf93fb490ca76"
+    },
+    {
+      "path": "app/cabin-regular-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/cabin-regular-webfont.ttf",
+      "size": 58796,
+      "hash": "9caf935e7a73adf5634b4e03d1582daa8ceecafe"
+    },
+    {
+      "path": "app/cabin-regular-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/cabin-regular-webfont.woff",
+      "size": 28080,
+      "hash": "87dc7674175a2d2f22ba969ca9c25ba7ab1ea426"
+    },
+    {
+      "path": "app/cave.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/cave.jpg",
+      "size": 49021,
+      "hash": "405517ccc69a182fcfab9d6f1abd70e69428c830"
+    },
+    {
+      "path": "app/degustation.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/degustation.jpg",
+      "size": 15664,
+      "hash": "279533558471e66315814549ec307af6f53f10f0"
+    },
+    {
+      "path": "app/fondVin2.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fondVin2.jpg",
+      "size": 68647,
+      "hash": "fbb4101de819cb609768193222ac5f61c88b3820"
+    },
+    {
+      "path": "app/god_bless_america-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/god_bless_america-webfont.eot",
+      "size": 27783,
+      "hash": "1a48ac8ae91208dc14349a09771c2c4d8925cd76"
+    },
+    {
+      "path": "app/god_bless_america-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/god_bless_america-webfont.svg",
+      "size": 145825,
+      "hash": "8d20712a862c4598ea3aa69b8d7c00f3964d6fbc"
+    },
+    {
+      "path": "app/god_bless_america-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/god_bless_america-webfont.ttf",
+      "size": 67280,
+      "hash": "86ea124254a4cd0ae91df163c8dc76186299f3db"
+    },
+    {
+      "path": "app/god_bless_america-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/god_bless_america-webfont.woff",
+      "size": 30660,
+      "hash": "99133a2c7403cd594bee96b524649298304513c7"
+    },
+    {
+      "path": "app/grape2bottle.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/grape2bottle.png",
+      "size": 70192,
+      "hash": "30991899909508b4b29a4699df17f27f1f46a66b"
+    },
+    {
+      "path": "app/grape2bottle2.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/grape2bottle2.png",
+      "size": 69210,
+      "hash": "843a85bb697b132df46e9a7e04189b6ffb6b9945"
+    },
+    {
+      "path": "app/partager.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/partager.jpg",
+      "size": 35477,
+      "hash": "9925582bbf52371f336732b292284038ea8ee2ec"
+    },
+    {
+      "path": "app/red_star.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/red_star.gif",
+      "size": 227,
+      "hash": "cf70e1063215c688c2f550eff785ace462663581"
+    },
+    {
+      "path": "app/red_wine.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/red_wine.jpg",
+      "size": 12364,
+      "hash": "850406abab1f58ccdc10fa3e555dc36d6b690325"
+    },
+    {
+      "path": "app/redbottle.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/redbottle.png",
+      "size": 2808,
+      "hash": "385af17739622985174358fe6a5a2e771ad5e949"
+    },
+    {
+      "path": "app/white_wall_hash.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/white_wall_hash.png",
+      "size": 63953,
+      "hash": "e17b48547683e686708ac4479af0b2504143f9f5"
+    },
+    {
+      "path": "app/whitebottle.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/whitebottle.png",
+      "size": 3072,
+      "hash": "1f0471dad11fae997eee716634e86f7c64335fec"
+    },
+    {
+      "path": "app.html",
+      "where": "internal",
+      "hash": "81e514b28af7532886db70752f6b3852fca66e49"
+    }
+  ]
+}

@@ -1,21 +1,4 @@
-if (Dbvins.find().count() === 0) {
-  for (n=0;n<templatevins.length;n++) {
-  
-  Dbvins.insert({
-    region : templatevins[n].region,
-    appellation : templatevins[n].appellation,
-    couleur : templatevins[n].couleur,
-    cavemin : templatevins[n].cavemin,
-    cavemax : templatevins[n].cavemax,
-    caveautres : templatevins[n].caveautres,
-    cepage : templatevins[n].cepage,
-    tempmin : templatevins[n].tempmin,
-    tempmax : templatevins[n].tempmax
-  });
 
-  }; 
-  
-};
 
 var templatevins = [
 {
@@ -1285,6 +1268,24 @@ var templatevins = [
   }
 ];
 
+if (Dbvins.find().count() === 0) {
+  for (n=0;n<templatevins.length;n++) {
+  
+  Dbvins.insert({
+    region : templatevins[n].region,
+    appellation : templatevins[n].appellation,
+    couleur : templatevins[n].couleur,
+    cavemin : templatevins[n].cavemin,
+    cavemax : templatevins[n].cavemax,
+    caveautres : templatevins[n].caveautres,
+    cepage : templatevins[n].cepage,
+    tempmin : templatevins[n].tempmin,
+    tempmax : templatevins[n].tempmax
+  });
+
+  }; 
+  
+};
 
 
 

@@ -9,7 +9,7 @@ Template.contactForm.events ({
   
     Meteor.call('sendMessage', mailM, fromM, messageM );
     Session.set('messageSent', true);
-    Router.go ('maCaveTemplate');
+    Router.go ('maCaveTemplateListe');
       
   }
   
