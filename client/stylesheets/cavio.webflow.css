@@ -1,0 +1,237 @@
+body {
+  margin-bottom: 23px;
+  padding-bottom: 10px;
+  background-color: #ebebeb;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin: 10px 0px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  position: static;
+  margin: 10px 0px;
+  color: #524c4c;
+  font-size: 34px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+  color: #2e2a2a;
+  font-size: 18px;
+  text-align: center;
+}
+.button {
+  position: static;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 4px 15px;
+  border-radius: 7px;
+  background-color: #632626;
+  color: white;
+  font-size: 19px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+}
+.button.boutoncliquezici {
+  position: static;
+  display: inline-block;
+  width: 371px;
+  margin-top: 10px;
+  background-color: #2c6131;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.button.boutoncliquezici:hover {
+  background-color: #1a381d;
+  text-decoration: none;
+  color:white;
+}
+.logo {
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-left: 16px;
+  font-family:'Great Vibes', cursive;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+}
+.nav2 {
+  background-color: transparent;
+  color: #421d1d;
+  font-weight: 400;
+}
+.slide1 {
+  height: 316px;
+  background-color: transparent;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+.slide2 {
+  background-image: url('wine3.PNG');
+}
+.slide3 {
+  height: 400px;
+  background-image: url('wine1.PNG');
+}
+.slidemaster {
+  height: 356px;
+}
+.middlebox {
+  position: absolute;
+  left: 49%;
+  top: 18%;
+  bottom: 1px;
+  display: block;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  text-align: center;
+}
+.signup {
+  font-family: Ubuntu, Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+.signup:hover {
+  text-decoration: underline;
+  color:white;
+}
+.row2 {
+  margin-top: 51px;
+}
+.cont1 {
+  margin-top: 58px;
+}
+.img1 {
+  position: static;
+  left: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  text-decoration: none;
+}
+.slider1 {
+  margin-top: -2px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  background-image: url('banieretonneau.png');
+  background-position: 0px 32%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  opacity: 1;
+  color: white;
+}
+.img2 {
+  width: auto;
+  height: auto;
+}
+.sectionnav {
+ 
+}
+.navbar1 {
+  background-color: transparent;
+}
+.slider2 {
+  
+  background-image: url('baniereraisin.png');
+  background-size: cover;
+}
+.slider3 {
+  
+  background-image: url('banieredegustation.png');
+  background-size: cover;
+}
+.slidercolumnstyle {
+  font-family: Ubuntu, Helvetica, sans-serif;
+  color: black;
+}
+.rowstyle1 {
+  margin-top: 71px;
+}
+.parabanner {
+  margin-top: 18px;
+  margin-bottom: 0px;
+}
+.containerbouton {
+  margin-top: 28px;
+  text-align: center;
+}
+.descriptionparagraphe {
+  width: 72.6%;
+  margin-top: 52px;
+  margin-right: 0px;
+  margin-left: 45px;
+  line-height: 24px;
+  text-align: center;
+}
+.winebottles {
+  border: 7px solid white;
+  background-color: white;
+}
+.descriptionparagraphe2 {
+  width: 72%;
+  margin-top: 112px;
+  margin-left: 70px;
+  line-height: 24px;
+}
+.footerblock {
+  margin-top: 10px;
+  background-color: transparent;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  text-align: center;
+}
+.footersection {
+  height: 57px;
+  background-color: #cfcfcf;
+}
+.decouvrez {
+  margin-top: 17px;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 21px;
+  text-align: center;
+}

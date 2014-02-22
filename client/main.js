@@ -14,7 +14,7 @@ Hooks.onLoggedOut = function () {
     Router.go('/');
 }
 WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro::latin' ] }
+    google: { families: [ "Ubuntu:300,400,500,700","Great Vibes:400"] }
   };
   (function() {
     var wf = document.createElement('script');

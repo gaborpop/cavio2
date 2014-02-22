@@ -1,74 +1,97 @@
 <template name="accueilTemplate">
-   <div class="container">
-     <div class = "containerMain">
-      <div class="starter-template">
-        
-        <p class="lead">Créez et gérez votre cave à vin simplement et rapidement</p>
-        <div class="mainHaut img-polaroid img-effect">
-          
-        
-            <div class="row">
-              <div class="span6">
-                  
-                           
-              </div>
-              <div class="span6">
-                <div class="rightMain">
-                  <br />
-                  <h4>Nouveau du Cavio ?</h4>
-                  <h5>Inscrivez-vous pour commencer votre première cave.</h5>
-                <div class="form-container">
-                  <form class="form-horizontal" id="register-form" action="action">
-                    
-                      
-                     
-                        <input type="email" id="account-email" placeholder="Votre adresse email">
-                        <div class="input-append">
-                          <input type="password" id="account-password"  placeholder="Choisissez un mot de passe" >
-                          <button type="submit" class="btn btn-large btn-green btn-retrait" id="create-account">S'inscrire</button>
-                    </div>
-                        <div class="error-mdp"></p>
-                      
-                      
-                    
-                   
-                  </form>
+  
+    <div class="w-slider" data-animation="cross" data-duration="500" data-infinite="1" data-delay="4000" data-autoplay="1">
+      <div class="w-slider-mask">
+        <div class="w-slide slider1">
+          <div class="w-container">
+            <div class="w-row rowstyle1">
+              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6 slidercolumnstyle">
+                <h2>Gérez votre cave à vin&nbsp;</h2>
+                <p class="parabanner">Avec Cavio, vous savez à tout moment quels vins vous avez dans votre cave</p>
               </div>
             </div>
-            
-            
-            
-         </div>
           </div>
-         </div>
-        </div><br />
-       </div>
-     
-     <div class="row">
-      <div class="span4">
-          <div class="roundimg">
-            <p>...car vous avez 10+ bouteilles et vous avez envie de savoir ce qui vous reste dans votre cave</p>
-         <img src="cave.jpg" class="img-rounded">
-         </div>
+        </div>
+        <div class="w-slide slider2">
+          <div class="w-container">
+            <div class="w-row rowstyle1">
+              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6 slidercolumnstyle">
+                <h2>Quand boire vos bouteilles</h2>
+                <p class="parabanner">Cavio vous donne toutes les informations dont vous avez besoin pour bien apprécier votre bouteille : apogée, températures de service, cépages...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-slide slider3">
+          <div class="w-container">
+            <div class="w-row rowstyle1">
+              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6 slidercolumnstyle">
+                <h2>Partagez avec vos amis</h2>
+                <p class="parabanner">Sur Cavio, vous pouvez suivre les caves de vos amis et leurs coups de coeur</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-       
-             <div class="span4">
-          <div class="roundimg">
-            <p>...car vous avez envie de garder une traçe de vos dégustations mémorables</p>
-         <img src="degustation.jpg" class="img-rounded">
-         </div>
+      <div class="w-slider-arrow-left">
+        <div class="w-icon-slider-left"></div>
       </div>
-       
-             <div class="span4">
-          <div class="roundimg">
-            <p>...car vous avez envie de suivre ce que vos amis dégustent et partager vos coups de coeur</p>
-         <img src="partager.jpg" class="img-rounded">
-         </div>
+      <div class="w-slider-arrow-right">
+        <div class="w-icon-slider-right"></div>
       </div>
-      
-     </div><br /><br />
-     
     </div>
-  
-  
-</template>
+  </div>
+  <div class="w-container containerbouton"><a class="button boutoncliquezici" href="#">Cliquez ici pour commencer votre cave</a>
+  </div>
+  <div class="decouvrez">Ou
+    <br>
+    <br>Découvrez pourquoi utiliser Cavio</div>
+  <div class="w-container cont1">
+    <div class="w-row">
+      <div class="w-col w-col-6">
+        <p class="descriptionparagraphe">Avec Cavio, vous disposez d’un espace privé où vous pouvez référencer l’ensemble de vos bouteilles de vin. Ajouter, modifier, archivez ou supprimez simplement&nbsp;vos bouteilles.
+          <br>
+          <br><strong>Vous savez à tout moment ce qui vous reste dans votre cave à vin.</strong>
+        </p>
+      </div>
+      <div class="w-col w-col-6">
+        <img src="landing-mockup.png" width="476" alt="53087f2a3e274f132a0005ab_landing-mockup.png">
+      </div>
+    </div>
+  </div>
+  <div class="w-container cont1">
+    <div class="w-row">
+      <div class="w-col w-col-6">
+        <img class="winebottles" src="winebottle.jpg" alt="53088589663cb6142a0006e1_winebottle.jpg">
+      </div>
+      <div class="w-col w-col-6">
+        <p class="descriptionparagraphe2">Il suffit de saisir l’appellation et la couleur de votre bouteille et le reste de l’information est automatiquement rempli à partir de la base de données complète de Cavio.
+          <br><strong>Vous savez exactement quand ouvrir votre bouteille.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="w-container cont1">
+    <div class="w-row">
+      <div class="w-col w-col-6">
+        <p class="descriptionparagraphe">Suivez vos amis et découvrez leurs bouteilles et caves.
+          <br><strong>Partagez votre passion pour vos vins et découvrez de nouvelles bouteilles</strong>
+          <br>
+          <br><em>Disponible bientôt</em>
+        </p>
+      </div>
+      <div class="w-col w-col-6">
+        <img class="winebottles" src="partager.jpg" alt="53088f5e5119a6eb6b000679_partager.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="footersection">
+    <div class="w-container">
+      <div class="footerblock">copyright 2014&nbsp;Carrousel Studio &nbsp;Contact&nbsp;&nbsp;Blog&nbsp;–&nbsp;L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</div>
+    </div>
+  </div>
+
+  </template>

@@ -5,6 +5,7 @@
     "spin": {},
     "event-hooks": {},
     "jquery-ui-bootstrap": {},
-    "iron-router": {}
+    "iron-router": {},
+    "accounts-entry": {}
   }
 }

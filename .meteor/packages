@@ -14,7 +14,6 @@ accounts-password
 spin
 event-hooks
 spiderable
-bootstrap
 
 
 
@@ -27,3 +26,5 @@ less
 iron-router
 
 router
+bootstrap
+accounts-entry
