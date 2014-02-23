@@ -4,4 +4,5 @@ Meteor.startup ->
     termsUrl: '/terms-of-use'
     homeRoute: '/'
     passwordSignupFields: 'EMAIL_ONLY'
+    dashboardRoute: '/macaveliste'
     
