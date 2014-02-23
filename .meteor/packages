@@ -26,5 +26,6 @@ less
 iron-router
 
 router
-bootstrap
 accounts-entry
+bootstrap-flatly
+coffeescript

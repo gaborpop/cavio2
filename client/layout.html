@@ -2,11 +2,22 @@
   <div class="sectionnav">
     <div class="w-nav navbar1" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
       <div class="w-container nav2">
-        <a class="w-nav-brand" href="#">
+        <a class="w-nav-brand" href="{{ pathFor 'accueilTemplate' }}">
           <div class="logo">Cavio</div>
         </a>
-        <nav class="w-nav-menu" role="navigation"><a class="w-nav-link signup" href="#">Se Connecter</a><a class="w-nav-link signup" href="#">S'inscrire</a>
+        <nav class="w-nav-menu" role="navigation">
+        {{#if currentUser}}
+        <a class="w-nav-link signup" href="{{ pathFor 'maCaveTemplateListe' }}">Ma Cave</a><a class="w-nav-link signup" href="/sign-out">Se déconnecter</a>
+        
+        {{else}}
+        <a class="w-nav-link signup" href="/sign-in/">Se Connecter</a><a class="w-nav-link signup" href="/sign-up">S'inscrire</a>
+
+        {{/if}}
+        
+        
         </nav>
+        
+
         <div class="w-nav-button">
           <div class="w-icon-nav-menu"></div>
         </div>

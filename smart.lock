@@ -8,7 +8,8 @@
       "event-hooks": {},
       "jquery-ui-bootstrap": {},
       "iron-router": {},
-      "accounts-entry": {}
+      "accounts-entry": {},
+      "bootstrap-flatly": {}
     },
     "packages": {
       "router": {
@@ -38,13 +39,18 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.2",
-        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+        "tag": "v0.6.3",
+        "commit": "79861385df5d2b667630ec82abe4de3efa3166e3"
       },
       "accounts-entry": {
         "git": "https://github.com/BeDifferential/accounts-entry.git",
         "tag": "v0.6.0",
         "commit": "54cd9585ea58c88f3dc2d736f3ae7a6fa8432c13"
+      },
+      "bootstrap-flatly": {
+        "git": "https://github.com/grokbot/meteor-bootstrap-flatly.git",
+        "tag": "v0.0.3",
+        "commit": "ca8eb1730f1090b8d6e0db75efbe566a2ff27ee7"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",

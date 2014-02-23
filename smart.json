@@ -6,6 +6,7 @@
     "event-hooks": {},
     "jquery-ui-bootstrap": {},
     "iron-router": {},
-    "accounts-entry": {}
+    "accounts-entry": {},
+    "bootstrap-flatly": {}
   }
 }
