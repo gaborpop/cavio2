@@ -1,20 +1,20 @@
 <template name="nouveauVin">
-  <div class="container cont2">
-	<form class="form-inline well">
-  <div class="row marginleft2">	
-		<div class="span10">
+  <div class="container">
+	<form class="form-inline">
+  <div class="row">	
+		<div class="col-md-10">
 			<div class="row">
 					
-						<input type="text" class="input-large" placeholder="Producteur du vin" name="nom_vin">
+						<input type="text" class="input-large form-control" placeholder="Producteur du vin" name="nom_vin">
 						
 						
 					
-						<input type="text" class="input-large appellation" placeholder="Appellation" name="appellation_vin" id="tags" />
+						<input type="text" class="input-large appellation form-control" placeholder="Appellation" name="appellation_vin" id="tags" />
 					
 					
 					
 						
-							<select id="ListeElement11" name="region_vin"> 
+							<select id="ListeElement11" name="region_vin" class="form-control"> 
 								 <option value="valeur1">Bordeaux</option> 
 								 <option value="valeur2">Bourgogne</option> 
 								 <option value="valeur3">Alsace</option> 
@@ -30,7 +30,7 @@
 							</select> 
 						
 					
-						 <select id="ListeElement" name="couleur_vin"> 
+						 <select id="ListeElement" name="couleur_vin" class="form-control"> 
 							 <option value="valeur1">Rouge</option> 
 							 <option value="valeur2">Blanc</option> 
 							 <option value="valeur3">Rosé</option> 
@@ -42,7 +42,7 @@
 		
 			<div class="row annee">
 				<input type="text" class="input-mini" placeholder="Année" name="annee_vin">
-						<select id="ListeElement" name="note_vin"> 
+						<select id="ListeElement" name="note_vin" class="form-control"> 
 							<option value="valeur1">Note : 1</option> 
 							<option value="valeur2">Note : 2</option> 
 							<option value="valeur3">Note : 3</option> 
@@ -80,8 +80,8 @@
 				
 			</div>	
 		</div>
-		<div class="span2">
-			<button type="submit" class="btn btn-green btn-big" value="Submit">Créer un vin</button>
+		<div class="col-md-2">
+			<button type="submit" class="btn btn-success btn-lg" value="Submit">Créer un vin</button>
 			
 		</div>
 		</div>	

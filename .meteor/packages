@@ -29,3 +29,6 @@ router
 accounts-entry
 bootstrap-flatly
 coffeescript
+
+just-i18n
+accounts-t9n
