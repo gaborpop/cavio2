@@ -1,19 +1,19 @@
 <template name="nouveauVin">
-  <div class="container">
-	<form class="form-inline">
+  <div class="container containerNouveauVin">
+	<form class="form well">
   <div class="row">	
-		<div class="col-md-10">
+		<div class="col-md-9">
 			<div class="row">
-					
-						<input type="text" class="input-large form-control" placeholder="Producteur du vin" name="nom_vin">
+					<div class="col-xs-3">
+						<input type="text" class=" form-control input1" placeholder="Producteur du vin" name="nom_vin">
+				</div>
 						
-						
+					<div class="col-xs-3">
+						<input type="text" class="appellation form-control" placeholder="Appellation" name="appellation_vin" id="tags" />
+					</div>
 					
-						<input type="text" class="input-large appellation form-control" placeholder="Appellation" name="appellation_vin" id="tags" />
 					
-					
-					
-						
+						<div class="col-xs-3">
 							<select id="ListeElement11" name="region_vin" class="form-control"> 
 								 <option value="valeur1">Bordeaux</option> 
 								 <option value="valeur2">Bourgogne</option> 
@@ -28,59 +28,81 @@
 								<option value="valeur3">Savoie-Bugey</option>
 								<option value="valeur3">Sud-Ouest</option>
 							</select> 
-						
-					
+						</div>	
+				<div class="col-xs-3">
 						 <select id="ListeElement" name="couleur_vin" class="form-control"> 
 							 <option value="valeur1">Rouge</option> 
 							 <option value="valeur2">Blanc</option> 
 							 <option value="valeur3">Rosé</option> 
         		</select> 
-						
+					</div>	
 					
 			
 			</div>
 		
-			<div class="row annee">
-				<input type="text" class="input-mini" placeholder="Année" name="annee_vin">
+			<div class="row row4">
+				  <div class="col-xs-3">
+				    <input type="text" class="form-control" placeholder="Année" name="annee_vin">
+					</div>
+					<div class="col-xs-3">
 						<select id="ListeElement" name="note_vin" class="form-control"> 
 							<option value="valeur1">Note : 1</option> 
 							<option value="valeur2">Note : 2</option> 
 							<option value="valeur3">Note : 3</option> 
 						</select> 
-				  
-			
+			    </div>	
+
 			</div>
-			<div class="row annee">
-				<input class="input-block-level" name="commentaireVin" type="text" placeholder="votre commentaire...."> 
-			
-			</div>
-			
-			<div class="row annee">
+      <div class="row row4">
+        <div class="col-xs-12">
+        <input class="input-block-level form-control" name="commentaireVin" type="text" placeholder="votre commentaire...."> 
+        </div> 
+       </div>
+      
+      
+			<div class="row row41">
+          
 							<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
-								Informations avancés :
-									</button>
+								Informations avancés    <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
 									 
 									<div id="demo" class="collapse"> 
-													<div class="row annee2">
-									Apogée : entre     <input type="text" class="input-mini inputtoutpetit">     ans et    <input type="text" class="inputtoutpetit">    ans
-					
-					</div>
-					<div class="row annee2">
-									Température de service : entre     <input type="text" class="inputtoutpetit">     °C et    <input type="text" class="inputtoutpetit">  °C
-					
-					</div>
+                                <div class="row row4">
+																			<div class="col-xs-4">
+																				<p class="gardestyle">Temps de garde :</p>
+																			</div>
+																	
+																		<div class="col-xs-3">
+																			Durée Minimale <input type="text" class=" form-control" placeholder="en années...">  
+																		</div>
+                                    
+                                    <div class="col-xs-3">
+                                      Durée Maximale<input type="text" class=" form-control" placeholder="en années...">   
+																		</div>
+                                    
+                    						</div>
+									
+                          <div class="row row4">
+                            		<div class="col-xs-4">
+                                  <p class="gardestyle">Température de service :  </p>
+																</div>	
+																<div class="col-xs-3">
+                                  °C Minimale<input type="text" class= "form-control" placeholder="en °C...">  
+																</div>
+																
+																<div class="col-xs-3">
+                                °C Maximale <input type="text" class=" form-control" placeholder="en °C...">  
+																</div>
+														
+                          
+                          	</div>
+  
+                       </div>
 
-													
-													
-													</div>
-					
-					
-			
-		
-				
-			</div>	
-		</div>
-		<div class="col-md-2">
+                        
+                     </div>	 </div>	 
+                    
+		<div class="col-md-3">
 			<button type="submit" class="btn btn-success btn-lg" value="Submit">Créer un vin</button>
 			
 		</div>

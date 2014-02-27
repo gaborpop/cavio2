@@ -5,22 +5,18 @@
      
      
      <div class = "containerMain2">
-         {{#if messageStatusIsTrue}}
-         <div class="alert alert-success">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <h5>Votre message a été envoyé avec succès !</h5>
-          {{/if}}
+         
         </div>
        
        
        <h4 class="macavetitle">Gestion de ma cave : </h4>
        <div class="row">
         
-        <div class="span1 offset2"><a href="{{ pathFor 'nouveauVin' }}" class="btn btn-green btnVin btn-ajouter"><i class="icon-plus-sign icon-white"></i> Ajouter un vin</a></div>
+        <div class="span1 offset2"><a href="{{ pathFor 'nouveauVin' }}" class="btn btn-success btnVin btn-ajouter"><i class="icon-plus-sign icon-white"></i> Ajouter un vin</a></div>
       </div>
       <div class="starter-template">
         <div class="row">
-          <div class="span12">
+          <div class="col-md-12">
             {{> tableauVinTemplateThumbnail  }}
           
           </div>
