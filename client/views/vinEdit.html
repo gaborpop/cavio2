@@ -1,42 +1,119 @@
 <template name="vinEdit">
-  <div class="container editWine">
+  <div class="container containerNouveauVin">
   {{#with vin}}
-    <form class="form-inline well">
-      <div class="row marginleft">
-      <div class="span10">
-      <input type="text" class="input-large" placeholder="Nom du vin" name="nom_vin" value="{{nomVin}}">
-          <select id="ListeElement1" name="region_vin"> 
-            <option value="valeur1">{{regionVin}}</option> 
-           <option value="valeur2">Bordeaux</option> 
-           <option value="valeur3">Bourgogne</option> 
-           <option value="valeur4">Alsace</option> 
-            <option value="valeur5">Côte du Rhone</option> 
-            <option value="valeur6">Vallée de la Loire</option> 
-            <option value="valeur7">Sud</option> 
-        </select> 
-        <select id="ListeElement" name="couleur_vin"> 
-           <option value="valeur1">{{couleurVin}}</option>
-           <option value="valeur2">Rouge</option> 
-           <option value="valeur3">Blanc</option> 
-           <option value="valeur4">Rosé</option> 
-        </select> 
-        <input type="text" class="input-medium" placeholder="Année" name="annee_vin" value="{{anneeVin}}">
-        <input type="text" id="tags" class="input-large" placeholder="Appellation" name="appellation_vin" value="{{appellationVin}}">
-        <select id="ListeElement" name="note_vin"> 
-          <option value="valeur1">Note : {{noteVin}}</option>
-          <option value="valeur2">Note : 1</option> 
-          <option value="valeur3">Note : 2</option> 
-          <option value="valeur4">Note : 3</option> 
-        </select> 
-        <input class="input-block-level long" name="commentaireVin" type="text" value="{{commentaireVin}}">
-        </div>  
-        <div class="span2">
-        <button type="submit" class="btn btn-green" value="Submit">Ok</button>
-      <a class="btn btn-red delete" href="#">Delete</a>
-          </div>  
-      </form> 
+    <form class="form well">
+  <div class="row">	
+		<div class="col-md-9">
+			<div class="row">
+					<div class="col-xs-3">
+						<input type="text" class=" form-control input1" placeholder="Producteur du vin" name="nom_vin" value="{{nomVin}}">
+				</div>
+						
+					<div class="col-xs-3">
+						<input type="text" class="appellation form-control" placeholder="Appellation" name="appellation_vin" id="tags" value="{{appellationVin}}" />
+					</div>
+					
+					
+						<div class="col-xs-3">
+							<select id="ListeElement11" name="region_vin" class="form-control"> 
+								<option value="valeur1">{{regionVin}}</option>  
+								<option value="valeur1">Bordeaux</option> 
+								 <option value="valeur2">Bourgogne</option> 
+								 <option value="valeur3">Alsace</option> 
+									<option value="valeur3">Côte du Rhone</option> 
+									<option value="valeur3">Vallée de la Loire</option> 
+									<option value="valeur3">Champagne</option> 
+									<option value="valeur3">Beaujoalais</option> 
+									<option value="valeur3">Provence-Corse</option> 
+									<option value="valeur3">Jura</option> 
+									<option value="valeur3">Languedoc-Roussillon</option> 
+								<option value="valeur3">Savoie-Bugey</option>
+								<option value="valeur3">Sud-Ouest</option>
+							</select> 
+						</div>	
+				<div class="col-xs-3">
+						 <select id="ListeElement" name="couleur_vin" class="form-control"> 
+								<option value="valeur1">{{couleurVin}}</option>																															
+							 <option value="valeur1">Rouge</option> 
+							 <option value="valeur2">Blanc</option> 
+							 <option value="valeur3">Rosé</option> 
+        		</select> 
+					</div>	
+					
+			
+			</div>
+		
+			<div class="row row4">
+				  <div class="col-xs-3">
+				    <input type="text" class="form-control" placeholder="Année" name="annee_vin"  value="{{anneeVin}}">
+					</div>
+					<div class="col-xs-3">
+						<select id="ListeElement" name="note_vin" class="form-control"> 
+							<option value="valeur1">Note : {{noteVin}}</option>
+							<option value="valeur1">Note : 1</option> 
+							<option value="valeur2">Note : 2</option> 
+							<option value="valeur3">Note : 3</option> 
+						</select> 
+			    </div>	
+
+			</div>
+      <div class="row row4">
+        <div class="col-xs-12">
+        <input class="input-block-level form-control" name="commentaireVin" type="text" placeholder="votre commentaire...." value="{{commentaireVin}}"> 
+        </div> 
+       </div>
+      
+      
+			<div class="row row41">
+          
+							<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+								Informations avancés    <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+									 
+									<div id="demo" class="collapse"> 
+                                <div class="row row4">
+																			<div class="col-xs-4">
+																				<p class="gardestyle">Temps de garde :</p>
+																			</div>
+																	
+																		<div class="col-xs-3">
+																			Durée Minimale <input type="text" class=" form-control" placeholder="en années..." value="{{cavemin}}">  
+																		</div>
+                                    
+                                    <div class="col-xs-3">
+                                      Durée Maximale<input type="text" class=" form-control" placeholder="en années..." value="{{cavemax}}">   
+																		</div>
+                                    
+                    						</div>
+									
+                          <div class="row row4">
+                            		<div class="col-xs-4">
+                                  <p class="gardestyle">Température de service :  </p>
+																</div>	
+																<div class="col-xs-3">
+                                  °C Minimale<input type="text" class= "form-control" placeholder="en °C..." value="{{tempmin}}">  
+																</div>
+																
+																<div class="col-xs-3">
+                                °C Maximale <input type="text" class=" form-control" placeholder="en °C..." value="{{tempmax}}">  
+																</div>
+														
+                          
+                          	</div>
   
-  
+                       </div>
+
+                        
+                     </div>	 </div>	 
+                    
+		<div class="col-md-3">
+			<button type="submit" class="btn btn-success btn-lg" value="Submit">Modifier</button><br />
+			<button class="btn btn-danger btn-lg delete">Supprim.</button>
+			
+			
+		</div>
+		</div>	
+	</form> 
   
   
   {{/with}}

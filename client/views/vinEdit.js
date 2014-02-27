@@ -17,7 +17,11 @@ Template.vinEdit.events({
       appellationVin: $(e.target).find('[name=appellation_vin]').val(),
       noteVin: $(e.target).find('[name=note_vin] :selected').text().split(' : ')[1],
       anneeVin: $(e.target).find('[name=annee_vin]').val(),
-      commentaireVin: $(e.target).find('[name=commentaireVin]').val()
+      commentaireVin: $(e.target).find('[name=commentaireVin]').val(),
+			cavemin: $(e.target).find('[name=caveminVin]').val(),
+			cavemax: $(e.target).find('[name=cavemaxVin]').val(),
+			tempmin: $(e.target).find('[name=tempminVin]').val(),
+			tempmax: $(e.target).find('[name=tempmaxVin]').val()
     }
 
     Vins.update(currentVinId, {$set: vinProperties}, function(error) {
