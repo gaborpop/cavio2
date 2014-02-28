@@ -14,4 +14,15 @@ Handlebars.registerHelper('couleurDuVin', function(t) {
   
 });
 
+Handlebars.registerHelper('isContactMessageSent', function() {
+
+	  if (Session.get('messageSent')) {
+   		return true;
+			alert('cool');
+  	}
+  
+ 
+  
+});
+
 
