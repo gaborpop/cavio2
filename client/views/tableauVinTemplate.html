@@ -3,65 +3,60 @@
   
   
   <br />
-  <div class="row">
-    <div class="col-md-2">
-			<p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateListe' }}">Par Liste</a></p>
-			<p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateThumbnail' }}">Par Miniature</a></p>
-      <p class="textalignleft"><a href="{{ pathFor 'tableauVinTemplateRight' }}">Archives</a></p>
+  <div class="row well">
+   
+    <div class="col-xs-5">
+      <div class="span1 offset2"><a href="{{ pathFor 'nouveauVin' }}" class="btn btn-success btnVin btn-ajouter"><i class="icon-plus-sign icon-white"></i> Ajouter un vin</a></div>
+    </div> 
+    <div class="col-xs-7 colAffichage">
+              <div class="col-xs-3">
+                <p class="textalignleft">Affichage par : </p>
+        </div> 
+        <div class="col-xs-2">
+          <p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateListe' }}">Par Liste</a></p>
+        </div>  
+        <div class="col-xs-3">  
+          <p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateThumbnail' }}">Par Miniature</a></p>
+        </div>  
+         <div class="col-xs-1"> 
+          <p class="textalignleft"><a href="{{ pathFor 'tableauVinTemplateRight' }}">Archives</a></p>
+        </div>  
     </div>
-    <div class="col-md-10">
+  </div>  
+  
+  
+  <div class="row">
+    <div class="col-md-12">
     <div class="pageVins">
-       {{#each vins}}
-          <div class="Grow">   
-            <div class="G0red">
-            
-            </div>
-            <div class="G1">
-
-                <img   src="redbottle.png" class="img-round imgVin vin" height="80">              
-            </div>
-            
-             <div class="G2">
-               <div class="classNomVin">{{ nomVin  }} - {{ anneeVin  }}</div>
-                <div class="classAppellation">{{ appellationVin  }} - {{ regionVin  }}</div>
-               <div class="classAppellation">Cépages : {{ cepage  }}</div>
-               
-                <div class="classAjoute">ajouté le {{ submittedText  }}</div> 
-             </div>
-            <div class="G25">
-              <div class="classAppellation">Note millésime : 5</div>
-               <div class="classAppellation">Votre note : 3</div>
-              <div class="commentVin">Commentaires: <em>"Super vin blablablablablab"</em></div>
-            </div>
-            
-            <div class="G3">
-              <div class="garde">Garde : </div>
-              <div class="garde1">{{ cavemin  }}</div>
-              <div class="garde">à</div>
-              <div class="garde1">{{ cavemax  }}</div>
-              <div class="garde">ans</div>
-              
-            </div>
-             <div class="G4">
-               <div class="garde">Temp : </div>
-              <div class="garde1">{{ tempmin }}</div>
-              <div class="garde">à</div>
-               <div class="garde1">{{ tempmax }}</div>
-              <div class="garde">°C</div>
-            </div>  
-            
-              <div class="G6">
-               <a href="{{ pathFor 'vinEdit' }}" class="btn btn-edit btnVin"><i class="icon-pencil icon-white"></i> Editer</a>
-                <a href="" class="btn btn-red btnVin modifyStatus"><i class="icon-glass icon-white"></i> Boire   </a>
-
-            </div> 
-            
-           <div class="G5red">
-            
-           </div>
-      
-          </div>
-       {{/each}}<hr>
+       <table class="table table-striped table-condensed table-hover tableStyle">
+            <thead>
+             <tr>
+               <th>Producteur</th>  
+               <th>Région</th> 
+               <th>Appellation</th> 
+               <th>Année</th> 
+               <th>Note</th> 
+               <th>Garde (min/max)</th> 
+               <th>Température de service (min/max)</th> 
+               <th>Action</th> 
+             </tr>  
+            </thead> 
+           <tbody>
+             {{#each vins}}
+                <tr>
+                  <td>{{ nomVin  }}</td>
+                  <td>{{ regionVin  }}</td>
+                  <td>{{ appellationVin  }}</td>
+                  <td>{{ anneeVin }}</td>
+                  <td>{{ notevin  }}</td>
+                  <td>{{ cavemin  }}/{{  cavemax }}</td>
+                  <td>{{ tempmin  }}/{{  tempmax }}</td>
+                  <td>   <a href="{{ pathFor 'vinEdit' }}" class="btn btn-edit btnVin"><i class="icon-pencil icon-white"></i> Editer</a>
+                <a href="" class="btn btn-red btnVin modifyStatus"><i class="icon-glass icon-white"></i> Boire   </a>    </td>
+                 </tr>
+             {{/each}}
+         </tbody>  
+         </table>
       </div>
   </div> 
   </div>

@@ -3,13 +3,28 @@
   
   
   <br />
-  <div class="row">
-    <div class="col-md-2">
-			<p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateListe' }}">Par Liste</a></p>
-			<p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateThumbnail' }}">Par Miniature</a></p>
-      <p class="textalignleft"><a href="{{ pathFor 'tableauVinTemplateRight' }}">Archives</a></p>
+    <div class="row well">
+   
+    <div class="col-xs-5">
+      <div class="span1 offset2"><a href="{{ pathFor 'nouveauVin' }}" class="btn btn-success btnVin btn-ajouter"><i class="icon-plus-sign icon-white"></i> Ajouter un vin</a></div>
+    </div> 
+    <div class="col-xs-7 colAffichage">
+              <div class="col-xs-3">
+                <p class="textalignleft">Affichage par : </p>
+        </div> 
+        <div class="col-xs-2">
+          <p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateListe' }}">Par Liste</a></p>
+        </div>  
+        <div class="col-xs-3">  
+          <p class="textalignleft"><a href="{{ pathFor 'maCaveTemplateThumbnail' }}">Par Miniature</a></p>
+        </div>  
+         <div class="col-xs-1"> 
+          <p class="textalignleft"><a href="{{ pathFor 'tableauVinTemplateRight' }}">Archives</a></p>
+        </div>  
     </div>
-    <div class="col-md-10">
+  </div>  
+  <div class="row">
+    <div class="col-md-12">
     <div class="pageVins">
 			
       <div class="rowvins">			
