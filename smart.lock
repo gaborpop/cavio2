@@ -9,7 +9,9 @@
       "jquery-ui-bootstrap": {},
       "iron-router": {},
       "accounts-entry": {},
-      "bootstrap-flatly": {}
+      "bootstrap-flatly": {},
+      "users-stats": {},
+      "reactive-table": {}
     },
     "packages": {
       "router": {
@@ -39,18 +41,28 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.3",
-        "commit": "79861385df5d2b667630ec82abe4de3efa3166e3"
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
       },
       "accounts-entry": {
         "git": "https://github.com/BeDifferential/accounts-entry.git",
-        "tag": "v0.6.0",
-        "commit": "54cd9585ea58c88f3dc2d736f3ae7a6fa8432c13"
+        "tag": "v0.6.2",
+        "commit": "56c9b6c064cc0d92a97aa9b53a8f4da050f54c29"
       },
       "bootstrap-flatly": {
         "git": "https://github.com/grokbot/meteor-bootstrap-flatly.git",
         "tag": "v0.0.3",
         "commit": "ca8eb1730f1090b8d6e0db75efbe566a2ff27ee7"
+      },
+      "users-stats": {
+        "git": "https://github.com/donflopez/meteor-users-stats.git",
+        "tag": "v0.1.5",
+        "commit": "41c92c352bc0dd93411bc9ef5eb8de8ead1a714c"
+      },
+      "reactive-table": {
+        "git": "https://github.com/ecohealthalliance/reactive-table.git",
+        "tag": "v0.2.0",
+        "commit": "2f53405959cdef42a2498aff1ff9bc233b3a76e7"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
@@ -76,6 +88,16 @@
         "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
         "tag": "v0.0.2",
         "commit": "408e3a037114cb72163073110e2121e3d548c1a2"
+      },
+      "easy-d3": {
+        "git": "https://github.com/donflopez/meteor-easy-d3.git",
+        "tag": "v0.1.2",
+        "commit": "07656b88a70ba00a2c79cd6bb240c5353d2007ac"
+      },
+      "session-amplify": {
+        "git": "https://github.com/cramrov/meteor-session-amplify.git",
+        "tag": "v0.1.1",
+        "commit": "4306d0c60f5c6bd633db237bd4200d832e73a122"
       }
     }
   }

@@ -25,45 +25,9 @@
   </div>  
   
   
-  <div class="row">
-    <div class="col-md-12">
-    <div class="pageVins">
-       <table class="table table-striped table-condensed table-hover tableStyle">
-            <thead>
-             <tr>
-               <th>Producteur</th>  
-               <th>Région</th> 
-							 <th>Couleur</th> 
-               <th>Appellation</th> 
-               <th>Année</th> 
-               <th>Note</th> 
-               <th>Garde (min/max)</th> 
-               <th>°T (min/max)</th> 
-							 <th>Avis</th>
-               <th>Action</th> 
-             </tr>  
-            </thead> 
-           <tbody>
-             {{#each vins}}
-                <tr>
-                  <td class="td1">{{ nomVin  }}</td>
-                  <td class="td2">{{ regionVin  }}</td>
-									<td class="td3">{{ couleurVin  }}</td>
-                  <td class="td4">{{ appellationVin  }}</td>
-                  <td class="td5">{{ anneeVin }}</td>
-                  <td class="td6">{{ noteVin  }}</td>
-                  <td class="td7">{{ cavemin  }} - {{  cavemax }}</td>
-                  <td class="td8">{{ tempmin  }} - {{  tempmax }}</td>
-									<td class="td9">{{ commentaireVin }}</td>
-                  <td class="td10">   <a href="{{ pathFor 'vinEdit' }}" class=""><i class="icon-pencil icon-white"></i> Editer</a>
-                <a href="" class=" modifyStatus"><i class="icon-glass icon-white"></i> Boire   </a>
-										
-						     </td>
-						 </tr>
-             {{/each}}
-         </tbody>  
-         </table>
-      </div>
+  
+      
+      {{reactiveTable vins settings}}
   </div> 
   </div>
 </template>       

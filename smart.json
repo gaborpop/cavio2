@@ -7,6 +7,8 @@
     "jquery-ui-bootstrap": {},
     "iron-router": {},
     "accounts-entry": {},
-    "bootstrap-flatly": {}
+    "bootstrap-flatly": {},
+    "users-stats": {},
+    "reactive-table": {}
   }
 }
