@@ -27,38 +27,7 @@
   </div>  
     
     
-   <div class="row">
-    <div class="col-md-12">
-    <div class="pageVins">
-       <table class="table table-striped table-condensed table-hover tableStyle">
-            <thead>
-             <tr>
-               <th>Producteur</th>  
-               <th>Région</th> 
-               <th>Appellation</th> 
-               <th>Année</th> 
-               <th>Note</th> 
-               <th>Garde (min/max)</th> 
-               <th>Température de service (min/max)</th> 
-               <th>Action</th> 
-             </tr>  
-            </thead> 
-           <tbody>
-             {{#each vinsBus}}
-                <tr>
-                  <td>{{ nomVin  }}</td>
-                  <td>{{ regionVin  }}</td>
-                  <td>{{ appellationVin  }}</td>
-                  <td>{{ anneeVin }}</td>
-                  <td>{{ notevin  }}</td>
-                  <td>{{ cavemin  }}/{{  cavemax }}</td>
-                  <td>{{ tempmin  }}/{{  tempmax }}</td>
-                  <td>   <a href="" class="modifyStatus remettreCave">remettre dans la cave</a></span>   </td>
-                 </tr>
-             {{/each}}
-         </tbody>  
-         </table>
-      </div>
+   {{reactiveTable vinsBus settings}}
   </div> 
   </div>  </div> </div> 
   </div> 

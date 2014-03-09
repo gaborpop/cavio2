@@ -52,8 +52,8 @@ Template.tableauVinTemplate.helpers({
         key: 'cavemax',
         label: 'Actions',
 				fn: function (value, object) {
-					Session.set("boireID", object._id);
-					return new Handlebars.SafeString('<a href="/macave/' + object._id +'/edit">Edit</a>' +' '+ '<a href="" class="modifyStatus">Archiver</a>'); 			
+					
+					return new Handlebars.SafeString('<a href="/macave/' + object._id +'/edit">Edit</a>' +' / '+ '<a href="" class="modifyStatus">Archiver</a>'); 			
     	}
 		}
 		
@@ -64,11 +64,11 @@ Template.tableauVinTemplate.helpers({
 });
 
 Template.tableauVinTemplate.events ({
-  'click .modifyStatus': function(e) {
+  'click .reactive-table tr': function(e) {
     e.preventDefault();
- 
-    Meteor.call('modifyS', Session.get("boireID"));
-		alert(Session.get("boireID"));
+   
+    Meteor.call('modifyS', this._id);
+		
   }
   
   
