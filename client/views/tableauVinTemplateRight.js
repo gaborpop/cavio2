@@ -33,7 +33,7 @@ Template.tableauVinTemplateRight.helpers({
         label: 'Actions',
 				fn: function (value, object) {
 					
-					return new Handlebars.SafeString('<a href="" class="modifyStatus remettreCave">remettre dans la cave</a></span> '); 			
+					return new Handlebars.SafeString('<a href=\"/'+ object._id +'/\">Remettre dans la cave</a>'); 			
     	}
 		}
 		
@@ -47,8 +47,21 @@ Template.tableauVinTemplateRight.helpers({
 Template.tableauVinTemplateRight.events ({
   'click .reactive-table tr': function(e) {
     e.preventDefault();
+  
+    
+    if(e.target.href) {
+      url1 = e.target.href;
+      url2 = url1.split("com", 2);
+     
+      url3 = url2[1].substring(1, url2[1].length-1);
+      
+     
+      Meteor.call('modifyS', url3);
+    }
+    else {
+       return;
+    }
    
-    Meteor.call('modifyS', this._id);
   }
   
   

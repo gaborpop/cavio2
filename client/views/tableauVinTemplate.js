@@ -31,6 +31,8 @@ Template.tableauVinTemplate.helpers({
     
   },
 	settings: function () {
+		array1 = [];
+		Session.set('buID', array1);
 		i18n.setLanguage('fr');
         return { fields: [
     { key: 'nomVin', label: 'Producteur' },
@@ -53,8 +55,10 @@ Template.tableauVinTemplate.helpers({
         label: 'Actions',
 				fn: function (value, object) {
 					
-					return new Handlebars.SafeString('<a href="/macave/' + object._id +'/edit">Edit</a>' +' / '+ '<a href="" class="modifyStatus">Archiver</a>'); 			
-    	}
+					
+					return new Handlebars.SafeString('<a id="editID" href="/macave/' + object._id +'/edit">Edit</a>' +' / '+ '<a href=\"/'+ object._id +'/\">Archiver</a>'); 			
+    	    
+        }
 		}
 		
 		
@@ -66,9 +70,28 @@ Template.tableauVinTemplate.helpers({
 Template.tableauVinTemplate.events ({
   'click .reactive-table tr': function(e) {
     e.preventDefault();
-   
-    Meteor.call('modifyS', this._id);
-		
+    if (e.target.id) {
+       
+      url10 = e.target.href;
+      
+      url20 = url10.split("com", 2);
+      url30 = url20[1];
+     
+      Router.go(url30);
+    }
+    
+    else if(e.target.href) {
+      url1 = e.target.href;
+      url2 = url1.split("com", 2);
+     
+      url3 = url2[1].substring(1, url2[1].length-1);
+      
+     
+      Meteor.call('modifyS', url3);
+    }
+    else {
+       return;
+    }
   }
   
   
